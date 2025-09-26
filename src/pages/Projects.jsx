@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const projects = [
   {
-    title: "Highway Construction",
+    title: "Heavy Engineering Construction",
     desc: "Major road development and expansion project.",
     img: "https://res.cloudinary.com/dzo14hk18/image/upload/v1757420643/men_at_work_mn9otg.jpg",
   },
@@ -17,14 +17,29 @@ const projects = [
     img: "https://res.cloudinary.com/dzo14hk18/image/upload/v1757420801/building2_s6ozuy.jpg",
   },
   {
-    title: "Industrial Park",
-    desc: "Large-scale industrial facility construction.",
-    img: "https://images.unsplash.com/photo-1581091215367-59ab9b6a113b?auto=format&fit=crop&w=800&q=60",
+    title: "Modern Building Construction",
+    desc: "Ongoing development of state-of-the-art commercial and residential structures with modern designs.",
+    img: "https://res.cloudinary.com/dzo14hk18/image/upload/v1758880752/constructions_tqhkl2.jpg",
   },
   {
-    title: "Stadium Renovation",
-    desc: "Renovation of sports stadium with modern facilities.",
-    img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=60",
+    title: "Tech Infrastructure at Work",
+    desc: "Installation and maintenance of advanced technology systems to support construction and business operations.",
+    img: "https://res.cloudinary.com/dzo14hk18/image/upload/v1758880727/btechatwork_p6inqd.jpg",
+  },
+  {
+    title: "Excavation and Machinery Work",
+    desc: "Use of heavy machinery for digging, earthworks, and site preparation.",
+    img: "https://res.cloudinary.com/dzo14hk18/image/upload/v1758887696/machine_tdjp3w.jpg",
+  },
+  {
+    title: "Site Supervision",
+    desc: "Project supervision and inspection to ensure standards and quality compliance.",
+    img: "https://res.cloudinary.com/dzo14hk18/image/upload/v1758887668/ceo_hmqtjh.jpg",
+  },
+  {
+    title: "Drainage System Construction",
+    desc: "Development of underground and surface drainage to control water flow.",
+    img: "https://res.cloudinary.com/dzo14hk18/image/upload/v1758887646/drainagework_x20uvj.jpg",
   },
 ];
 

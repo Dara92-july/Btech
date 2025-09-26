@@ -30,8 +30,8 @@ const About = () => {
         {/* Image Section */}
         <div className="w-full">
           <img
-            src="https://res.cloudinary.com/dzo14hk18/image/upload/v1757420541/construction_r3zpvk.jpg"
-            alt="Btech Heritage Team at Work"
+            src="https://res.cloudinary.com/dzo14hk18/image/upload/v1758880708/about_msuz7r.jpg"
+            alt="About Btech Heritage"
             className="rounded-lg shadow-lg object-cover w-full h-[400px]"
           />
         </div>

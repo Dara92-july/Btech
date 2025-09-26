@@ -2,6 +2,21 @@ import React from "react";
 import { Mail } from "lucide-react";
 
 const Contact = () => {
+  // handle form submit
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const message = e.target.message.value;
+
+    // build mailto link
+    const subject = encodeURIComponent(`New message from ${name}`);
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+
+    window.location.href = `mailto:btechheritageassociates@gmail.com?subject=${subject}&body=${body}`;
+  };
+
   return (
     <section className="container mx-auto py-20 px-6">
       <div className="grid md:grid-cols-2 gap-12 items-start">
@@ -26,25 +41,34 @@ const Contact = () => {
         </div>
 
         {/* Right Side - Contact Form */}
-        <form className="bg-white shadow-md rounded-lg p-8">
+        <form
+          onSubmit={handleSubmit}
+          className="bg-white shadow-md rounded-lg p-8"
+        >
           <div className="mb-4">
             <input
               type="text"
+              name="name"
               placeholder="Name"
+              required
               className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"
             />
           </div>
           <div className="mb-4">
             <input
               type="email"
+              name="email"
               placeholder="Email"
+              required
               className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"
             />
           </div>
           <div className="mb-6">
             <textarea
+              name="message"
               placeholder="Message"
               rows="5"
+              required
               className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"
             ></textarea>
           </div>
