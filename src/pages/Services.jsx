@@ -2,24 +2,19 @@ import React from "react";
 import { Briefcase, Building2, Hammer, Ruler, ClipboardList, Settings } from "lucide-react";
 
 const services = [
-  { name: "Commercial Buildings", icon: Building2 },
-  { name: "Residential Developments", icon: Building2 },
-  { name: "Highway Construction", icon: Hammer },
-  { name: "Bridge Engineering", icon: Ruler },
-  { name: "Road Maintenance & Repair", icon: Hammer },
-  { name: "Infrastructure Development", icon: ClipboardList },
+  { name: "Commercial and Residential Developments", icon: Building2 },
+  { name: "Highway ,Bridge Engineering, Infrastructure Development ", icon: Ruler },
   { name: "Consultancy", icon: Briefcase },
-  { name: "Project Management", icon: ClipboardList },
+  { name: "Project Manager", icon: ClipboardList },
   { name: "Cost/Quality Control", icon: Settings },
-  { name: "Structural Designs", icon: Ruler },
   { name: "Design & Build", icon: Hammer },
 ];
 
 const Services = () => {
   return (
-    <section id="services-section" className="container mx-auto py-20 px-6">
-      <div className="text-center max-w-3xl mx-auto mb-14">
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+    <section id="services-section" className="container px-6 py-20 mx-auto">
+      <div className="max-w-3xl mx-auto text-center mb-14">
+        <h2 className="mb-4 text-4xl font-bold text-gray-800">Our Services</h2>
         <p className="text-gray-600">
           At <span className="font-semibold">BTECH Heritage Associates</span>, we
           provide a wide range of engineering, construction, and consultancy services 
@@ -28,21 +23,21 @@ const Services = () => {
         </p>
       </div>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {services.map((service, index) => {
           const Icon = service.icon;
           return (
             <div
               key={index}
-              className="bg-white border border-gray-200 shadow-sm rounded-xl p-8 text-center hover:shadow-lg hover:border-yellow-600 transition"
+              className="p-8 text-center transition bg-white border border-gray-200 shadow-sm rounded-xl hover:shadow-lg hover:border-yellow-600"
             >
               <div className="flex justify-center mb-4">
                 <Icon className="w-12 h-12 text-yellow-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-3">
+              <h3 className="mb-3 text-xl font-semibold text-gray-800">
                 {service.name}
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-sm leading-relaxed text-gray-600">
                 We deliver reliable solutions in <span className="font-medium">{service.name}</span>,
                 leveraging innovation, experience, and professional excellence.
               </p>
